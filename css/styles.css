@@ -11,8 +11,21 @@ body {
     margin: 0;
     height: 100vh;
     background-image: url("/home/joseottonello/Portafolio/Proyectos/app-todolist/images/1.jpg");
+    background-color: var(--diabled);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 736px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        height: 100vh;
+        background-image: url("/home/joseottonello/Portafolio/Proyectos/app-todolist/images/1.jpg");
+        background-color: var(--diabled);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 *:first-letter {
