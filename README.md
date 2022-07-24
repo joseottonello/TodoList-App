@@ -1,4 +1,4 @@
-# Notes
+# To do list
 This project was created with HTML, CSS and JavaScript. Sass was also incorporated for CSS support.
 In this application you can create pending tasks to be carried out as well as cross off the tasks already carried out.
 
