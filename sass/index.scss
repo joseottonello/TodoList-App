@@ -1,0 +1,114 @@
+$primary: #eed757;
+$secondary: #65e96b;
+$dark: #000;
+$gray: #dad6d6;
+$light: #fff;
+
+@mixin disFlex ($ds, $direction, $align, $justify) {
+    display: $ds;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 50rem;
+
+    background-size: cover;
+    background-color: $primary;
+    background-repeat: no-repeat;
+    
+    @media screen and (max-width: 736px) {
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            height: 50rem;
+    
+            background-size: cover;
+            background-color: $primary;
+            background-repeat: no-repeat;
+        }
+    }
+    
+    .list {
+        margin: 50px auto;
+        padding: 25px;
+        max-width: 50rem;
+        border-radius: 2rem;
+        background-color: $light;
+        
+        .date {
+            @include disFlex(flex, column, center, center);
+            
+            .firstDate {
+                @include disFlex(flex, row, center, flex-start);
+                
+                #dateNumber {
+                    font-size: 15rem;
+                    margin-left: 1rem;
+                    text-transform: uppercase;  
+                }
+                
+                .smallDate {
+                    font-size: 2rem;
+                }
+            }
+
+            #dateText {
+                font-size: 5rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+form {
+    @include disFlex(flex, row, flex-end, center);
+
+    input {
+        font-size: 2rem;
+        width: 35rem; 
+        padding: 15px;
+        margin-bottom: 5px;
+        
+        border: none;   
+        border-radius: 1rem;
+        
+        color: $dark;
+        background-color: $gray;
+        
+    }
+    input:focus {
+        outline: none;
+    }
+
+    .addTaskButton,
+    .deleteTaskButton {
+        margin: 1rem;
+        border: none;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: $gray;
+    }
+}
+
+.task {
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: $gray;
+    padding: 15px;
+    margin-top: 15px;
+    color: #000;
+    cursor: pointer;
+}
+
+.done {
+    background-color: $primary;
+    text-decoration: line-through;
+    color: #000;
+}
+

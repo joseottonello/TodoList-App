@@ -1,0 +1,95 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  height: 50rem;
+  background-size: cover;
+  background-color: #eed757;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 736px) {
+  body body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    height: 50rem;
+    background-size: cover;
+    background-color: #eed757;
+    background-repeat: no-repeat;
+  }
+}
+body .list {
+  margin: 50px auto;
+  padding: 25px;
+  max-width: 50rem;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+body .list .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .list .date .firstDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .list .date .firstDate #dateNumber {
+  font-size: 15rem;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+body .list .date .firstDate .smallDate {
+  font-size: 2rem;
+}
+body .list .date #dateText {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+form input {
+  font-size: 2rem;
+  width: 35rem;
+  padding: 15px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 1rem;
+  color: #000;
+  background-color: #dad6d6;
+}
+form input:focus {
+  outline: none;
+}
+form .addTaskButton,
+form .deleteTaskButton {
+  margin: 1rem;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #dad6d6;
+}
+
+.task {
+  font-size: 2rem;
+  border-radius: 1rem;
+  background-color: #dad6d6;
+  padding: 15px;
+  margin-top: 15px;
+  color: #000;
+  cursor: pointer;
+}
+
+.done {
+  background-color: #eed757;
+  text-decoration: line-through;
+  color: #000;
+}/*# sourceMappingURL=index.css.map */
