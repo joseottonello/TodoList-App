@@ -20,7 +20,6 @@ git clone + link
 ```
 
 ## Preview
-+++++++++++++++++++++++
 ![](./assets/gif.gif)
 
 ### Notes
