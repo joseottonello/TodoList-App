@@ -8,7 +8,7 @@ This project has two branches:
 "gh-pages" branch: where your "deploy" is located
 
 ## Demo
-If you want to see the demo of this project deployed you can visit [Project demo](https://joseottonello.github.io/app-todolist//)
+If you want to see the demo of this project deployed you can visit [Project demo](https://todo-list-app-joseottonello.vercel.app/)
 
 ## How to clone
 To clone this repository you need:
@@ -20,7 +20,7 @@ git clone + link
 ```
 
 ## Preview
-![](./assets/gif.gif)
+![](./assets/imagen.png)
 
 ### Notes
 If you want to learn all about Sass I recommend you visit the site [Sass-long.com](https://sass-lang.com//)
