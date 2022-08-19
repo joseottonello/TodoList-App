@@ -11,26 +11,14 @@ $light: #fff;
     justify-content: $justify;
 }
 
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
-    height: 50rem;
 
     background-size: cover;
     background-color: $primary;
     background-repeat: no-repeat;
-    
-    @media screen and (max-width: 736px) {
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            height: 50rem;
-    
-            background-size: cover;
-            background-color: $primary;
-            background-repeat: no-repeat;
-        }
-    }
     
     .list {
         margin: 50px auto;
@@ -38,6 +26,10 @@ body {
         max-width: 50rem;
         border-radius: 2rem;
         background-color: $light;
+
+        @media screen and (max-width: 800px) {
+            margin: 50px;
+        }
         
         .date {
             @include disFlex(flex, column, center, center);
@@ -57,6 +49,7 @@ body {
             }
 
             #dateText {
+                margin-bottom: 2rem;
                 font-size: 5rem;
                 text-transform: uppercase;
             }

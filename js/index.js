@@ -5,7 +5,6 @@ dateYear = document.getElementById('dateYear'),
 dateText = document.getElementById('dateText'),
 tasksContainer = document.getElementById('tasksContainer');
 
-
 const setDate = () => {
     const date = new Date();
     dateNumber.textContent = date.toLocaleString('en', { day: 'numeric' });
@@ -26,21 +25,9 @@ const addNewTask = event => {
     event.target.reset();
 };
 
+
 const changeTaskState = event => {
     event.target.classList.toggle('done');
 };
-
-const order = () => {
-    const done = [];
-    const toDo = [];
-    tasksContainer.childNodes.forEach( el => {
-        el.classList.contains('done') ? done.push(el) : toDo.push(el)
-    })
-    return [...toDo, ...done];
-}
-
-const renderOrderedTasks = () => {
-    order().forEach(el => tasksContainer.appendChild(el))
-}
 
 setDate();
